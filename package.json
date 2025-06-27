@@ -1,27 +1,67 @@
 {
   "name": "ai-judgedao",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A blockchain-based decentralized AI arbitration platform",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "install:all": "npm install && cd frontend && npm install",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start",
+    "test": "npm run test:contracts && npm run test:frontend",
+    "test:contracts": "npx hardhat test",
+    "test:frontend": "cd frontend && npm run test",
+    "test:coverage": "npx hardhat coverage",
+    "compile": "npx hardhat compile",
+    "deploy:local": "npx hardhat run scripts/deploy-all.js --network localhost",
+    "deploy:sepolia": "npx hardhat run scripts/deploy-all.js --network sepolia",
+    "deploy:mumbai": "npx hardhat run scripts/deploy-all.js --network mumbai",
+    "verify:sepolia": "npx hardhat verify --network sepolia",
+    "node": "npx hardhat node",
+    "clean": "npx hardhat clean && cd frontend && rm -rf .next",
+    "lint": "cd frontend && npm run lint",
+    "type-check": "cd frontend && npm run type-check",
+    "format": "prettier --write \"**/*.{js,ts,tsx,sol}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,tsx,sol}\""
+  },
+  "keywords": [
+    "blockchain",
+    "arbitration",
+    "dao",
+    "ai",
+    "dispute-resolution",
+    "smart-contracts",
+    "ethereum",
+    "chainlink",
+    "web3",
+    "defi"
+  ],
+  "author": "AIJudgeDAO Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ai-judgedao.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/ai-judgedao/issues"
+  },
+  "homepage": "https://github.com/your-username/ai-judgedao#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "prettier": "^3.0.0",
+    "prettier-plugin-solidity": "^1.2.0",
+    "dotenv": "^16.3.1"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.2.4"
+    "@openzeppelin/contracts": "^5.0.0",
+    "@chainlink/contracts": "^0.8.0"
   },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.2.4",
-    "@eslint/eslintrc": "^3"
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }

@@ -1,0 +1,515 @@
+{
+  "app": {
+    "title": "AIJudgeDAO",
+    "description": "去中心化AI仲裁DAO，让智能合约争议得到公正、透明的解决"
+  },
+  "home": {
+    "hero": {
+      "title": "🧑‍⚖️ AIJudgeDAO",
+      "description": "去中心化AI仲裁DAO，让智能合约争议得到公正、透明的解决",
+      "viewDemo": "查看演示案例",
+      "submitDispute": "提交争议"
+    },
+    "features": {
+      "aiArbitration": {
+        "title": "AI 仲裁",
+        "description": "多个AI Agent独立分析，确保判决公正性"
+      },
+      "decentralized": {
+        "title": "去中心化",
+        "description": "链上执行，无需信任第三方机构"
+      },
+      "fastResponse": {
+        "title": "快速响应",
+        "description": "自动化流程，分钟级完成仲裁"
+      },
+      "communityGovernance": {
+        "title": "社区治理",
+        "description": "开放透明，社区参与监督"
+      },
+      "aiAssisted": "AI辅助判决",
+      "decentralizedArbitration": "去中心化仲裁",
+      "fastEfficient": "快速高效"
+    },
+    "demoCase": {
+      "title": "演示案例",
+      "heading": "智能合约支付争议",
+      "description": "关于智能合约支付执行的争议案例。申请人声称被申请人未能在规定时间内交付约定服务，触发了价值50,000 USDC的支付争议条款。",
+      "viewFullProcess": "查看完整仲裁流程",
+      "details": {
+        "disputeId": "dispute_001",
+        "claimant": "0x1234567890123456789012345678901234567890",
+        "respondent": "0x9876543210987654321098765432109876543210",
+        "amount": "50,000 USDC",
+        "ruleSet": "智能合约争议规则 v1.0",
+        "category": "合同违约",
+        "submittedAt": "2024-01-15T10:30:00Z",
+        "caseDescription": "涉及区块链开发服务的服务交付协议争议。合同规定30天交付时间线，采用里程碑式付款。",
+        "evidence": [
+          {
+            "id": "evidence_001",
+            "title": "原始服务协议",
+            "type": "PDF",
+            "submittedBy": "申请人",
+            "timestamp": "2024-01-15T10:30:00Z",
+            "ipfsHash": "bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi"
+          },
+          {
+            "id": "evidence_002",
+            "title": "沟通记录",
+            "type": "文本",
+            "submittedBy": "被申请人",
+            "timestamp": "2024-01-15T14:20:00Z",
+            "ipfsHash": "bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi"
+          },
+          {
+            "id": "evidence_003",
+            "title": "工作进度截图",
+            "type": "图片",
+            "submittedBy": "被申请人",
+            "timestamp": "2024-01-16T09:15:00Z",
+            "ipfsHash": "bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi"
+          }
+        ]
+      }
+    },
+    "quickNav": {
+      "submitNew": {
+        "title": "提交新争议",
+        "description": "遇到争议？让AI法官为您仲裁"
+      },
+      "arbiter": {
+        "title": "成为仲裁员",
+        "description": "注册成为仲裁员，参与争议解决并获得奖励"
+      },
+      "history": {
+        "title": "争议历史",
+        "description": "查看您的历史争议记录"
+      },
+      "demo": {
+        "title": "演示案例",
+        "description": "查看完整的仲裁流程演示"
+      },
+      "componentDemo": {
+        "title": "组件演示",
+        "description": "查看UI组件和样式"
+      },
+      "aiAssisted": "AI辅助判决",
+      "decentralizedArbitration": "去中心化仲裁",
+      "fastEfficient": "快速高效"
+    },
+    "buttons": {
+      "becomeArbiter": "成为仲裁员",
+      "componentDemo": "组件演示"
+    },
+    "web3Features": {
+      "title": "钱包已连接 - 解锁完整功能",
+      "submitRealDispute": {
+        "title": "提交真实争议",
+        "description": "直接与智能合约交互"
+      },
+      "registerArbiter": {
+        "title": "注册仲裁员",
+        "description": "质押代币成为仲裁员"
+      },
+      "participateVoting": {
+        "title": "参与投票",
+        "description": "对争议案例进行投票"
+      }
+    }
+  },
+  "arbiter": {
+    "register": {
+      "title": "仲裁员注册",
+      "backToHome": "返回首页",
+      "connectWallet": "请先连接您的Web3钱包",
+      "connectDescription": "注册成为仲裁员需要连接Web3钱包来进行链上交互",
+      "whatIsArbiter": {
+        "title": "什么是仲裁员？",
+        "description": "仲裁员是AIJudgeDAO生态系统中的关键参与者，负责对争议案例进行公正的投票和判决。",
+        "responsibilities": [
+          "参与争议案例的投票",
+          "基于证据做出公正判决",
+          "获得投票奖励",
+          "维护平台声誉"
+        ]
+      },
+      "requirements": {
+        "title": "注册要求",
+        "minStake": "最少质押 1000 代币",
+        "selectSpecialty": "选择专业领域",
+        "provideQualifications": "提供资格证明（可选）"
+      },
+      "benefits": {
+        "title": "仲裁员权益",
+        "items": [
+          "参与争议投票获得代币奖励",
+          "声誉系统激励公正投票",
+          "参与平台治理决策",
+          "建立专业声誉和影响力"
+        ]
+      },
+      "risks": {
+        "title": "风险提示",
+        "items": [
+          "质押代币可能因恶意行为被扣除",
+          "需要及时参与分配的案件投票",
+          "声誉低下可能影响被选中概率"
+        ]
+      },
+      "workflow": {
+        "title": "仲裁员工作流程",
+        "steps": [
+          {
+            "title": "注册质押",
+            "description": "质押代币成为合格仲裁员"
+          },
+          {
+            "title": "随机选择",
+            "description": "系统随机选择仲裁员面板"
+          },
+          {
+            "title": "审议投票",
+            "description": "基于证据进行公正投票"
+          },
+          {
+            "title": "获得奖励",
+            "description": "获得投票奖励和声誉提升"
+          }
+        ]
+      }
+    },
+    "panel": {
+      "title": "仲裁员面板",
+      "subtitle": "争议案例 #{id}",
+      "backToDashboard": "返回仪表板",
+      "disputeOverview": "争议概览",
+      "claimant": "申请人",
+      "respondent": "被申请人",
+      "amount": "金额",
+      "category": "类别",
+      "aiVerdict": "AI判决",
+      "guilty": "有罪",
+      "notGuilty": "无罪",
+      "confidence": "置信度",
+      "castVote": "投票",
+      "reasoning": "投票理由",
+      "reasoningPlaceholder": "请提供您对此决定的理由...",
+      "submitVote": "提交投票",
+      "submittingVote": "提交中...",
+      "panelStatus": "面板状态",
+      "votesSubmitted": "已提交投票",
+      "deadline": "投票截止时间",
+      "timeRemaining": "剩余时间",
+      "voteValidationError": "请选择投票选项并提供理由",
+      "voteSubmitted": "投票提交成功！",
+      "voteError": "投票提交失败，请重试。",
+      "notFound": "未找到面板",
+      "notFoundDescription": "无法找到请求的仲裁员面板。"
+    },
+    "dashboard": {
+      "title": "仲裁员仪表板",
+      "subtitle": "管理您的仲裁案例并跟踪您的表现",
+      "stats": {
+        "totalCases": "总案例数",
+        "activeCases": "活跃案例",
+        "reputation": "声誉",
+        "successRate": "成功率"
+      },
+      "activeCases": "活跃案例",
+      "amount": "金额",
+      "deadline": "截止时间",
+      "status": {
+        "pending_vote": "待投票",
+        "voting": "投票中",
+        "evidence_review": "证据审查"
+      },
+      "viewCase": "查看案例",
+      "viewDetails": "查看详情",
+      "noActiveCases": "无活跃案例",
+      "noActiveCasesDescription": "您目前没有活跃的仲裁案例。",
+      "financialOverview": "财务概览",
+      "totalStaked": "总质押",
+      "totalEarned": "总收益",
+      "viewEarnings": "查看收益",
+      "quickActions": "快速操作",
+      "updateProfile": "更新资料",
+      "manageStake": "管理质押",
+      "viewAllCases": "查看所有案例",
+      "recentActivity": "最近活动",
+      "activity": {
+        "voteSubmitted": "为案例 #123 提交了投票",
+        "newCaseAssigned": "分配了新案例给您",
+        "reputationIncreased": "声誉增加了 2 分"
+      }
+    }
+  },
+  "navigation": {
+    "home": "首页",
+    "submitDispute": "提交争议",
+    "becomeArbiter": "成为仲裁员",
+    "disputeHistory": "争议历史",
+    "demoCase": "演示案例",
+    "componentDemo": "组件演示",
+    "descriptions": {
+      "home": "返回主页",
+      "submitDispute": "提交新的争议案例",
+      "becomeArbiter": "注册成为仲裁员",
+      "disputeHistory": "查看历史争议记录",
+      "demoCase": "查看完整仲裁流程",
+      "componentDemo": "查看UI组件和样式"
+    },
+    "walletConnected": "钱包已连接",
+    "walletDescription": "可以使用完整的区块链功能",
+    "quickActions": "快速操作",
+    "stats": {
+      "totalDisputes": "总争议数",
+      "activeArbiters": "活跃仲裁员"
+    }
+  },
+  "demo": {
+    "title": "AIJudgeDAO 组件演示",
+    "subtitle": "查看改进后的UI组件和颜色方案",
+    "navigation": {
+      "title": "演示导航",
+      "buttons": "按钮样式",
+      "web3": "Web3连接",
+      "arbiter": "仲裁员注册",
+      "panel": "仲裁面板",
+      "verdict": "最终判决"
+    },
+    "buttonDemo": {
+      "title": "按钮样式演示",
+      "description": "所有按钮现在都有一致的颜色方案",
+      "usage": "使用方法：",
+      "buttons": {
+        "primary": "主要按钮",
+        "secondary": "次要按钮",
+        "success": "成功按钮",
+        "danger": "危险按钮",
+        "info": "信息按钮",
+        "warning": "警告按钮",
+        "outline": "轮廓按钮",
+        "ghost": "幽灵按钮"
+      }
+    },
+    "web3Demo": {
+      "title": "Web3连接组件",
+      "description": "改进的钱包连接界面"
+    },
+    "arbiterDemo": {
+      "title": "仲裁员注册",
+      "description": "完整的仲裁员注册流程"
+    },
+    "panelDemo": {
+      "title": "仲裁面板",
+      "description": "仲裁员选择和投票界面"
+    },
+    "verdictDemo": {
+      "title": "最终判决",
+      "description": "增强的判决显示界面"
+    },
+    "colorScheme": {
+      "title": "颜色方案",
+      "description": "AIJudgeDAO的主要颜色",
+      "primary": "主色调",
+      "secondary": "次要色",
+      "info": "信息色",
+      "success": "成功色"
+    },
+    "quickNav": {
+      "title": "快速导航",
+      "backHome": "返回首页",
+      "submitDispute": "提交争议",
+      "becomeArbiter": "成为仲裁员",
+      "demoCase": "演示案例"
+    }
+  },
+  "web3": {
+    "connect": {
+      "title": "连接钱包",
+      "description": "请连接您的Web3钱包以使用AIJudgeDAO的完整功能",
+      "connectMetaMask": "连接MetaMask",
+      "connecting": "连接中...",
+      "noMetaMask": "未检测到MetaMask",
+      "installMetaMask": "安装MetaMask"
+    },
+    "connected": {
+      "title": "钱包已连接",
+      "address": "地址:",
+      "network": "网络:",
+      "networkWarning": "网络提醒",
+      "networkDescription": "AIJudgeDAO建议使用Sepolia测试网络进行测试",
+      "availableFeatures": "可用功能:",
+      "features": [
+        "提交争议到区块链",
+        "注册成为仲裁员",
+        "参与争议投票",
+        "查看链上记录"
+      ],
+      "disconnect": "断开连接"
+    },
+    "button": {
+      "connect": "连接钱包",
+      "connecting": "连接中..."
+    }
+  },
+  "dispute": {
+    "new": {
+      "title": "提交新争议",
+      "description": "详细描述您的争议，AIJudgeDAO将为您提供公正仲裁"
+    },
+    "form": {
+      "details": "争议详情",
+      "title": "争议标题",
+      "titlePlaceholder": "简要描述您的争议",
+      "category": "争议类别",
+      "categories": {
+        "daoGovernance": "DAO治理争议",
+        "smartContract": "智能合约执行",
+        "tokenDistribution": "代币分配",
+        "votingManipulation": "投票操纵",
+        "fundManagement": "资金管理",
+        "other": "其他"
+      },
+      "amount": "涉及金额 (可选)",
+      "amountPlaceholder": "例如: 100,000 USDC",
+      "description": "详细描述",
+      "descriptionPlaceholder": "详细描述争议的背景、经过和您认为的问题所在...",
+      "evidence": "证据文件 (可选)",
+      "uploadEvidence": "点击上传证据文件",
+      "supportedFormats": "支持 PDF, DOC, TXT, 图片格式",
+      "fileSelected": "已选择: ",
+      "notice": {
+        "title": "提交须知:",
+        "point1": "提交后将消耗少量 Gas 费用用于链上记录",
+        "point2": "AI 法官将在 5-10 分钟内完成仲裁",
+        "point3": "仲裁结果将永久记录在区块链上",
+        "point4": "恶意提交可能面临声誉惩罚"
+      },
+      "submit": "提交争议",
+      "submitting": "提交中..."
+    },
+    "success": {
+      "title": "争议提交成功！",
+      "description": "您的争议已成功提交到区块链，AI法官正在分析中...",
+      "disputeId": "争议ID: ",
+      "estimatedTime": "预计仲裁时间: 5-10分钟",
+      "redirecting": "正在跳转到争议详情页..."
+    },
+    "history": {
+      "title": "争议历史",
+      "description": "查看您提交的所有争议记录和仲裁结果",
+      "stats": {
+        "total": "总争议数",
+        "resolved": "已解决",
+        "inReview": "仲裁中",
+        "won": "胜诉"
+      },
+      "list": {
+        "id": "ID: ",
+        "category": "类别: ",
+        "amount": "涉及: ",
+        "viewDetails": "查看详情",
+        "submissionTime": "提交时间",
+        "resolutionTime": "解决时间",
+        "arbitrationResult": "仲裁结果",
+        "guilty": "判定有罪",
+        "notGuilty": "判定无罪"
+      },
+      "empty": {
+        "title": "暂无争议记录",
+        "description": "您还没有提交过任何争议",
+        "submitFirst": "提交第一个争议"
+      }
+    },
+    "detail": {
+      "status": {
+        "None": "未开始",
+        "Submitted": "已提交",
+        "EvidencePending": "等待证据",
+        "AwaitingAI": "等待AI分析",
+        "AIProposed": "AI分析完成",
+        "Voting": "投票中",
+        "Resolved": "已解决",
+        "Closed": "已关闭",
+        "resolved": "已完成",
+        "inReview": "仲裁中",
+        "submitted": "已提交"
+      },
+      "disputeId": "争议 ID: ",
+      "submitter": "提交人: ",
+      "submissionTime": "提交时间: ",
+      "evidence": "证据: IPFS 存储"
+    }
+  },
+  "arbitration": {
+    "timeline": {
+      "title": "仲裁流程",
+      "steps": {
+        "submitDispute": "提交争议",
+        "addEvidence": "证据收集",
+        "awaitingAI": "等待AI分析",
+        "aiAnalysis": "AI分析完成",
+        "selectPanel": "仲裁员面板选择",
+        "voting": "仲裁员投票",
+        "finalize": "最终判决",
+        "closed": "案例关闭",
+        "selectAgents": "随机选出 AI Agent",
+        "inJudgment": "AI 判定中",
+        "completed": "仲裁完成"
+      }
+    },
+    "chainStatus": {
+      "title": "链上状态",
+      "network": "网络",
+      "txHash": "交易哈希",
+      "contractAddress": "合约地址",
+      "gasFee": "Gas 费用"
+    },
+    "verdict": {
+      "title": "最终仲裁结果",
+      "guilty": "判定有罪",
+      "notGuilty": "判定无罪",
+      "agentsJudged": "AI Agent 判定有罪",
+      "confidenceLevel": "平均信心度",
+      "consensusStrength": "共识强度",
+      "strong": "强",
+      "medium": "中",
+      "explanation": "仲裁说明",
+      "explanationText": "基于 {count} 个 AI Agent 的独立分析，{guiltyCount} 个判定存在投票操纵行为。{verdictExplanation}",
+      "guiltyExplanation": "根据多数原则，最终判定该争议成立，建议采取相应措施。",
+      "notGuiltyExplanation": "未达成多数共识，争议不成立，维持原投票结果。"
+    },
+    "agent": {
+      "confidenceLevel": "判断信心",
+      "reasoningTitle": "判断理由",
+      "guilty": "有罪",
+      "notGuilty": "无罪"
+    },
+    "mockPanel": {
+      "title": "演示控制面板",
+      "controls": "仲裁控制",
+      "triggerArbitration": "触发仲裁",
+      "arbitrating": "仲裁中...",
+      "resetDemo": "重置演示",
+      "modifyVerdict": "修改 Agent 判决",
+      "selectAgent": "选择 Agent",
+      "selectVerdict": "选择判决",
+      "updateVerdict": "更新判决",
+      "quickScenarios": "快速场景",
+      "allNotGuilty": "全部无罪",
+      "allGuilty": "全部有罪",
+      "splitDecision": "分歧判决",
+      "randomDecision": "随机判决",
+      "guilty": "有罪",
+      "notGuilty": "无罪",
+      "notice": "这是AIJudgeDAO演示控制面板，用于模拟不同的仲裁场景。在实际应用中，AI Agent 的判决将由智能合约自动执行。"
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "guilty": "有罪",
+    "notGuilty": "无罪"
+  }
+}

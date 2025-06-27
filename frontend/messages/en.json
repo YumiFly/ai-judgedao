@@ -1,0 +1,515 @@
+{
+  "app": {
+    "title": "AIJudgeDAO",
+    "description": "Decentralized AI arbitration DAO for fair and transparent resolution of smart contract disputes"
+  },
+  "home": {
+    "hero": {
+      "title": "🧑‍⚖️ AIJudgeDAO",
+      "description": "Decentralized AI arbitration DAO for fair and transparent resolution of smart contract disputes",
+      "viewDemo": "View Demo Case",
+      "submitDispute": "Submit Dispute"
+    },
+    "features": {
+      "aiArbitration": {
+        "title": "AI Arbitration",
+        "description": "Multiple AI Agents analyze independently to ensure fair judgments"
+      },
+      "decentralized": {
+        "title": "Decentralized",
+        "description": "On-chain execution without relying on third-party institutions"
+      },
+      "fastResponse": {
+        "title": "Fast Response",
+        "description": "Automated process, arbitration completed in minutes"
+      },
+      "communityGovernance": {
+        "title": "Community Governance",
+        "description": "Open and transparent, with community participation and oversight"
+      },
+      "aiAssisted": "AI-Assisted Judgment",
+      "decentralizedArbitration": "Decentralized Arbitration",
+      "fastEfficient": "Fast & Efficient"
+    },
+    "demoCase": {
+      "title": "Demo Case",
+      "heading": "Smart Contract Payment Dispute",
+      "description": "A dispute regarding a smart contract payment execution between two parties. The claimant alleges that the respondent failed to deliver agreed services within the specified timeframe, triggering a payment dispute clause worth 50,000 USDC.",
+      "viewFullProcess": "View Full Arbitration Process",
+      "details": {
+        "disputeId": "dispute_001",
+        "claimant": "0x1234567890123456789012345678901234567890",
+        "respondent": "0x9876543210987654321098765432109876543210",
+        "amount": "50,000 USDC",
+        "ruleSet": "Smart Contract Dispute Rules v1.0",
+        "category": "Contract Breach",
+        "submittedAt": "2024-01-15T10:30:00Z",
+        "caseDescription": "Service delivery agreement dispute involving blockchain development services. Contract specified 30-day delivery timeline with milestone-based payments.",
+        "evidence": [
+          {
+            "id": "evidence_001",
+            "title": "Original Service Agreement",
+            "type": "PDF",
+            "submittedBy": "Claimant",
+            "timestamp": "2024-01-15T10:30:00Z",
+            "ipfsHash": "bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi"
+          },
+          {
+            "id": "evidence_002",
+            "title": "Communication Records",
+            "type": "Text",
+            "submittedBy": "Respondent",
+            "timestamp": "2024-01-15T14:20:00Z",
+            "ipfsHash": "bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi"
+          },
+          {
+            "id": "evidence_003",
+            "title": "Work Progress Screenshots",
+            "type": "Images",
+            "submittedBy": "Respondent",
+            "timestamp": "2024-01-16T09:15:00Z",
+            "ipfsHash": "bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi"
+          }
+        ]
+      }
+    },
+    "quickNav": {
+      "submitNew": {
+        "title": "Submit New Dispute",
+        "description": "Facing a dispute? Let AI judges arbitrate for you"
+      },
+      "arbiter": {
+        "title": "Become Arbiter",
+        "description": "Register as an arbiter, participate in dispute resolution and earn rewards"
+      },
+      "history": {
+        "title": "Dispute History",
+        "description": "View your historical dispute records"
+      },
+      "demo": {
+        "title": "Demo Case",
+        "description": "View a complete arbitration process demonstration"
+      },
+      "componentDemo": {
+        "title": "Component Demo",
+        "description": "View UI components and styles"
+      },
+      "aiAssisted": "AI-Assisted Judgment",
+      "decentralizedArbitration": "Decentralized Arbitration",
+      "fastEfficient": "Fast & Efficient"
+    },
+    "buttons": {
+      "becomeArbiter": "Become Arbiter",
+      "componentDemo": "Component Demo"
+    },
+    "web3Features": {
+      "title": "Wallet Connected - Full Features Unlocked",
+      "submitRealDispute": {
+        "title": "Submit Real Dispute",
+        "description": "Interact directly with smart contracts"
+      },
+      "registerArbiter": {
+        "title": "Register Arbiter",
+        "description": "Stake tokens to become an arbiter"
+      },
+      "participateVoting": {
+        "title": "Participate in Voting",
+        "description": "Vote on dispute cases"
+      }
+    }
+  },
+  "arbiter": {
+    "register": {
+      "title": "Arbiter Registration",
+      "backToHome": "Back to Home",
+      "connectWallet": "Please connect your Web3 wallet first",
+      "connectDescription": "Registering as an arbiter requires connecting a Web3 wallet for on-chain interactions",
+      "whatIsArbiter": {
+        "title": "What is an Arbiter?",
+        "description": "Arbiters are key participants in the AIJudgeDAO ecosystem, responsible for fair voting and judgment on dispute cases.",
+        "responsibilities": [
+          "Participate in dispute case voting",
+          "Make fair judgments based on evidence",
+          "Earn voting rewards",
+          "Maintain platform reputation"
+        ]
+      },
+      "requirements": {
+        "title": "Registration Requirements",
+        "minStake": "Minimum stake of 1000 tokens",
+        "selectSpecialty": "Select professional areas",
+        "provideQualifications": "Provide qualifications (optional)"
+      },
+      "benefits": {
+        "title": "Arbiter Benefits",
+        "items": [
+          "Earn token rewards for participating in dispute voting",
+          "Reputation system incentivizes fair voting",
+          "Participate in platform governance decisions",
+          "Build professional reputation and influence"
+        ]
+      },
+      "risks": {
+        "title": "Risk Warning",
+        "items": [
+          "Staked tokens may be deducted for malicious behavior",
+          "Must participate in assigned case voting promptly",
+          "Low reputation may affect selection probability"
+        ]
+      },
+      "workflow": {
+        "title": "Arbiter Workflow",
+        "steps": [
+          {
+            "title": "Register & Stake",
+            "description": "Stake tokens to become qualified arbiter"
+          },
+          {
+            "title": "Random Selection",
+            "description": "System randomly selects arbiter panel"
+          },
+          {
+            "title": "Review & Vote",
+            "description": "Make fair votes based on evidence"
+          },
+          {
+            "title": "Earn Rewards",
+            "description": "Receive voting rewards and reputation boost"
+          }
+        ]
+      }
+    },
+    "panel": {
+      "title": "Arbiter Panel",
+      "subtitle": "Dispute Case #{id}",
+      "backToDashboard": "Back to Dashboard",
+      "disputeOverview": "Dispute Overview",
+      "claimant": "Claimant",
+      "respondent": "Respondent",
+      "amount": "Amount",
+      "category": "Category",
+      "aiVerdict": "AI Verdict",
+      "guilty": "Guilty",
+      "notGuilty": "Not Guilty",
+      "confidence": "Confidence",
+      "castVote": "Cast Your Vote",
+      "reasoning": "Reasoning",
+      "reasoningPlaceholder": "Please provide your reasoning for this decision...",
+      "submitVote": "Submit Vote",
+      "submittingVote": "Submitting Vote...",
+      "panelStatus": "Panel Status",
+      "votesSubmitted": "Votes Submitted",
+      "deadline": "Voting Deadline",
+      "timeRemaining": "Time Remaining",
+      "voteValidationError": "Please select a vote and provide reasoning",
+      "voteSubmitted": "Vote submitted successfully!",
+      "voteError": "Failed to submit vote. Please try again.",
+      "notFound": "Panel Not Found",
+      "notFoundDescription": "The requested arbiter panel could not be found."
+    },
+    "dashboard": {
+      "title": "Arbiter Dashboard",
+      "subtitle": "Manage your arbitration cases and track your performance",
+      "stats": {
+        "totalCases": "Total Cases",
+        "activeCases": "Active Cases",
+        "reputation": "Reputation",
+        "successRate": "Success Rate"
+      },
+      "activeCases": "Active Cases",
+      "amount": "Amount",
+      "deadline": "Deadline",
+      "status": {
+        "pending_vote": "Pending Vote",
+        "voting": "Voting",
+        "evidence_review": "Evidence Review"
+      },
+      "viewCase": "View Case",
+      "viewDetails": "View Details",
+      "noActiveCases": "No Active Cases",
+      "noActiveCasesDescription": "You have no active arbitration cases at the moment.",
+      "financialOverview": "Financial Overview",
+      "totalStaked": "Total Staked",
+      "totalEarned": "Total Earned",
+      "viewEarnings": "View Earnings",
+      "quickActions": "Quick Actions",
+      "updateProfile": "Update Profile",
+      "manageStake": "Manage Stake",
+      "viewAllCases": "View All Cases",
+      "recentActivity": "Recent Activity",
+      "activity": {
+        "voteSubmitted": "Vote submitted for case #123",
+        "newCaseAssigned": "New case assigned to you",
+        "reputationIncreased": "Reputation increased by 2 points"
+      }
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "submitDispute": "Submit Dispute",
+    "becomeArbiter": "Become Arbiter",
+    "disputeHistory": "Dispute History",
+    "demoCase": "Demo Case",
+    "componentDemo": "Component Demo",
+    "descriptions": {
+      "home": "Return to homepage",
+      "submitDispute": "Submit new dispute case",
+      "becomeArbiter": "Register as an arbiter",
+      "disputeHistory": "View historical dispute records",
+      "demoCase": "View complete arbitration process",
+      "componentDemo": "View UI components and styles"
+    },
+    "walletConnected": "Wallet Connected",
+    "walletDescription": "Full blockchain features available",
+    "quickActions": "Quick Actions",
+    "stats": {
+      "totalDisputes": "Total Disputes",
+      "activeArbiters": "Active Arbiters"
+    }
+  },
+  "demo": {
+    "title": "AIJudgeDAO Component Demo",
+    "subtitle": "View improved UI components and color scheme",
+    "navigation": {
+      "title": "Demo Navigation",
+      "buttons": "Button Styles",
+      "web3": "Web3 Connection",
+      "arbiter": "Arbiter Registration",
+      "panel": "Arbitration Panel",
+      "verdict": "Final Verdict"
+    },
+    "buttonDemo": {
+      "title": "Button Style Demo",
+      "description": "All buttons now have consistent color scheme",
+      "usage": "Usage:",
+      "buttons": {
+        "primary": "Primary Button",
+        "secondary": "Secondary Button",
+        "success": "Success Button",
+        "danger": "Danger Button",
+        "info": "Info Button",
+        "warning": "Warning Button",
+        "outline": "Outline Button",
+        "ghost": "Ghost Button"
+      }
+    },
+    "web3Demo": {
+      "title": "Web3 Connection Component",
+      "description": "Improved wallet connection interface"
+    },
+    "arbiterDemo": {
+      "title": "Arbiter Registration",
+      "description": "Complete arbiter registration process"
+    },
+    "panelDemo": {
+      "title": "Arbitration Panel",
+      "description": "Arbiter selection and voting interface"
+    },
+    "verdictDemo": {
+      "title": "Final Verdict",
+      "description": "Enhanced verdict display interface"
+    },
+    "colorScheme": {
+      "title": "Color Scheme",
+      "description": "AIJudgeDAO main colors",
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "info": "Info",
+      "success": "Success"
+    },
+    "quickNav": {
+      "title": "Quick Navigation",
+      "backHome": "Back to Home",
+      "submitDispute": "Submit Dispute",
+      "becomeArbiter": "Become Arbiter",
+      "demoCase": "Demo Case"
+    }
+  },
+  "web3": {
+    "connect": {
+      "title": "Connect Wallet",
+      "description": "Please connect your Web3 wallet to use the full features of AIJudgeDAO",
+      "connectMetaMask": "Connect MetaMask",
+      "connecting": "Connecting...",
+      "noMetaMask": "MetaMask not detected",
+      "installMetaMask": "Install MetaMask"
+    },
+    "connected": {
+      "title": "Wallet Connected",
+      "address": "Address:",
+      "network": "Network:",
+      "networkWarning": "Network Reminder",
+      "networkDescription": "AIJudgeDAO recommends using Sepolia testnet for testing",
+      "availableFeatures": "Available Features:",
+      "features": [
+        "Submit disputes to blockchain",
+        "Register as arbiter",
+        "Participate in dispute voting",
+        "View on-chain records"
+      ],
+      "disconnect": "Disconnect"
+    },
+    "button": {
+      "connect": "Connect Wallet",
+      "connecting": "Connecting..."
+    }
+  },
+  "dispute": {
+    "new": {
+      "title": "Submit New Dispute",
+      "description": "Describe your dispute in detail, AIJudgeDAO will provide fair arbitration"
+    },
+    "form": {
+      "details": "Dispute Details",
+      "title": "Dispute Title",
+      "titlePlaceholder": "Briefly describe your dispute",
+      "category": "Dispute Category",
+      "categories": {
+        "daoGovernance": "DAO Governance",
+        "smartContract": "Smart Contract Execution",
+        "tokenDistribution": "Token Distribution",
+        "votingManipulation": "Voting Manipulation",
+        "fundManagement": "Fund Management",
+        "other": "Other"
+      },
+      "amount": "Amount Involved (Optional)",
+      "amountPlaceholder": "e.g., 100,000 USDC",
+      "description": "Detailed Description",
+      "descriptionPlaceholder": "Describe the background, process, and what you believe the issue is...",
+      "evidence": "Evidence Files (Optional)",
+      "uploadEvidence": "Click to upload evidence files",
+      "supportedFormats": "Supports PDF, DOC, TXT, image formats",
+      "fileSelected": "Selected: ",
+      "notice": {
+        "title": "Submission Notice:",
+        "point1": "Submission will consume a small gas fee for on-chain recording",
+        "point2": "AI judges will complete arbitration in 5-10 minutes",
+        "point3": "Arbitration results will be permanently recorded on the blockchain",
+        "point4": "Malicious submissions may face reputation penalties"
+      },
+      "submit": "Submit Dispute",
+      "submitting": "Submitting..."
+    },
+    "success": {
+      "title": "Dispute Submitted Successfully!",
+      "description": "Your dispute has been successfully submitted to the blockchain, AI judges are analyzing...",
+      "disputeId": "Dispute ID: ",
+      "estimatedTime": "Estimated arbitration time: 5-10 minutes",
+      "redirecting": "Redirecting to dispute details page..."
+    },
+    "history": {
+      "title": "Dispute History",
+      "description": "View all your submitted disputes and arbitration results",
+      "stats": {
+        "total": "Total Disputes",
+        "resolved": "Resolved",
+        "inReview": "In Review",
+        "won": "Won"
+      },
+      "list": {
+        "id": "ID: ",
+        "category": "Category: ",
+        "amount": "Amount: ",
+        "viewDetails": "View Details",
+        "submissionTime": "Submission Time",
+        "resolutionTime": "Resolution Time",
+        "arbitrationResult": "Arbitration Result",
+        "guilty": "Guilty",
+        "notGuilty": "Not Guilty"
+      },
+      "empty": {
+        "title": "No Dispute Records",
+        "description": "You haven't submitted any disputes yet",
+        "submitFirst": "Submit Your First Dispute"
+      }
+    },
+    "detail": {
+      "status": {
+        "None": "Not Started",
+        "Submitted": "Submitted",
+        "EvidencePending": "Evidence Pending",
+        "AwaitingAI": "Awaiting AI",
+        "AIProposed": "AI Analysis Complete",
+        "Voting": "Voting",
+        "Resolved": "Resolved",
+        "Closed": "Closed",
+        "resolved": "Resolved",
+        "inReview": "In Review",
+        "submitted": "Submitted"
+      },
+      "disputeId": "Dispute ID: ",
+      "submitter": "Submitter: ",
+      "submissionTime": "Submission Time: ",
+      "evidence": "Evidence: IPFS Storage"
+    }
+  },
+  "arbitration": {
+    "timeline": {
+      "title": "Arbitration Process",
+      "steps": {
+        "submitDispute": "Submit Dispute",
+        "addEvidence": "Evidence Collection",
+        "awaitingAI": "Awaiting AI Analysis",
+        "aiAnalysis": "AI Analysis Complete",
+        "selectPanel": "Arbiter Panel Selected",
+        "voting": "Arbiter Voting",
+        "finalize": "Final Verdict",
+        "closed": "Case Closed",
+        "selectAgents": "Randomly Select AI Agents",
+        "inJudgment": "AI Judgment in Progress",
+        "completed": "Arbitration Completed"
+      }
+    },
+    "chainStatus": {
+      "title": "Chain Status",
+      "network": "Network",
+      "txHash": "Transaction Hash",
+      "contractAddress": "Contract Address",
+      "gasFee": "Gas Fee"
+    },
+    "verdict": {
+      "title": "Final Arbitration Result",
+      "guilty": "Judged Guilty",
+      "notGuilty": "Judged Not Guilty",
+      "agentsJudged": "AI Agents judged guilty",
+      "confidenceLevel": "Average Confidence",
+      "consensusStrength": "Consensus Strength",
+      "strong": "Strong",
+      "medium": "Medium",
+      "explanation": "Arbitration Explanation",
+      "explanationText": "Based on the independent analysis of {count} AI Agents, {guiltyCount} determined that voting manipulation occurred. {verdictExplanation}",
+      "guiltyExplanation": "According to the majority principle, the dispute is upheld, and appropriate measures are recommended.",
+      "notGuiltyExplanation": "No majority consensus was reached, the dispute is not upheld, and the original voting result is maintained."
+    },
+    "agent": {
+      "confidenceLevel": "Confidence Level",
+      "reasoningTitle": "Reasoning",
+      "guilty": "Guilty",
+      "notGuilty": "Not Guilty"
+    },
+    "mockPanel": {
+      "title": "Demo Control Panel",
+      "controls": "Arbitration Control",
+      "triggerArbitration": "Trigger Arbitration",
+      "arbitrating": "Arbitrating...",
+      "resetDemo": "Reset Demo",
+      "modifyVerdict": "Modify Agent Verdict",
+      "selectAgent": "Select Agent",
+      "selectVerdict": "Select Verdict",
+      "updateVerdict": "Update Verdict",
+      "quickScenarios": "Quick Scenarios",
+      "allNotGuilty": "All Not Guilty",
+      "allGuilty": "All Guilty",
+      "splitDecision": "Split Decision",
+      "randomDecision": "Random Decision",
+      "guilty": "Guilty",
+      "notGuilty": "Not Guilty",
+      "notice": "This is the AIJudgeDAO demo control panel for simulating different arbitration scenarios. In actual applications, AI Agent judgments will be automatically executed by smart contracts."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "guilty": "GUILTY",
+    "notGuilty": "NOT_GUILTY"
+  }
+}
