@@ -16,6 +16,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
+  distDir: 'dist',
   // 移除已弃用的 optimizeFonts 选项
   // 在 Next.js 15 中，字体优化是默认启用的
 };
